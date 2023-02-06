@@ -48,10 +48,7 @@ export default function News({ news }: { news: News }) {
                 <div className={styles.center}>
                     <Image src={src} width="400" height="240" alt={news.title} onError={loadImage(news.url, setSrc)} />
                 </div>
-                <div className={styles.center}>
-                    <h1><a href={news.url}> Read More </a></h1>
-                </div>
-
+                <h1><a href={news.url}>Read More</a></h1>
             </main>
         </>
     );
